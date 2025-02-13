@@ -15,6 +15,11 @@ import com.atv1.DesFrameworks.entities.Equipamento;
 @RequestMapping(value = "/equipamentos")
 
 public class EquipamentoController {
+	
+	@GetMapping
+	public ResponseEntity<List<Equipamento>> findAll(){
+		return ResponseEntity.ok().body(null);
+	}
 
 
 	
