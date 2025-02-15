@@ -12,7 +12,7 @@ import javax.persistence.Table;
 @Entity
 @Table (name = "tb_equipamentos")
 
-public class Equipamento implements Serializable {
+public class Equipamento implements Serializable{
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,9 +21,9 @@ public class Equipamento implements Serializable {
 	private String numPatrimonio;
 	private String local;
 	private Date dataCompra;
-	private Double valorCompra;
+	private Float valorCompra;
 	private Date dataVenda;
-	private Double valorVenda;
+	private Float valorVenda;
 	
 	public Equipamento() {
 		super();
@@ -67,11 +67,11 @@ public class Equipamento implements Serializable {
 		this.dataCompra = dataCompra;
 	}
 
-	public Double getValorCompra() {
+	public Float getValorCompra() {
 		return valorCompra;
 	}
 
-	public void setValorCompra(Double valorCompra) {
+	public void setValorCompra(Float valorCompra) {
 		this.valorCompra = valorCompra;
 	}
 
@@ -83,11 +83,11 @@ public class Equipamento implements Serializable {
 		this.dataVenda = dataVenda;
 	}
 
-	public Double getValorVenda() {
+	public Float getValorVenda() {
 		return valorVenda;
 	}
 
-	public void setValorVenda(Double valorVenda) {
+	public void setValorVenda(Float valorVenda) {
 		this.valorVenda = valorVenda;
 	}
 	
